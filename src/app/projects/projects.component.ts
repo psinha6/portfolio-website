@@ -9,14 +9,6 @@ import { Project } from '../models/models';
 export class ProjectsComponent implements OnInit {
   projects: Project[] = [
     {
-      title: 'SAP S/4HANA Cloud',
-      technologies: 'SAPUI, HTML, CSS',
-      description: [
-        'Worked as a senior developer to develop apps that are powered by Cloud which now is the landing page of SAP Tool.',
-        'Trained and mentored junior developers and engineers, teaching skills in SAPUI5 and working to improve overall team performance',
-      ],
-    },
-    {
       title: 'Luma Virtual Agent',
       technologies: 'Angular, TypeScript, RxJS, HTML, SCSS, NgRX, Socket.io',
       description: [
@@ -33,6 +25,14 @@ export class ProjectsComponent implements OnInit {
         'Led the team for the complete development of the product',
       ],
     },
+    {
+      title: 'SAP S/4HANA Cloud',
+      technologies: 'SAPUI, HTML, CSS',
+      description: [
+        'Worked as a senior developer to develop apps that are powered by Cloud which now is the landing page of SAP Tool.',
+        'Trained and mentored junior developers and engineers, teaching skills in SAPUI5 and working to improve overall team performance',
+      ],
+    }
   ];
   constructor() {}
 
