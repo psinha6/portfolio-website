@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { WorkExperience } from '../models/models';
 
 @Component({
@@ -6,7 +6,7 @@ import { WorkExperience } from '../models/models';
   templateUrl: './work-experience.component.html',
   styleUrls: ['./work-experience.component.css'],
 })
-export class WorkExperienceComponent implements OnInit {
+export class WorkExperienceComponent {
   workExpList: WorkExperience[] = [
     {
       role: 'Senior Software Engineer',
@@ -57,5 +57,4 @@ export class WorkExperienceComponent implements OnInit {
   ];
   constructor() {}
 
-  ngOnInit(): void {}
 }

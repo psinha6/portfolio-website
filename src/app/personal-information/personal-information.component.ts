@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './personal-information.component.html',
   styleUrls: ['./personal-information.component.css'],
 })
-export class PersonalInformationComponent implements OnInit {
+export class PersonalInformationComponent {
   myData: string[][] = [
     ['Name', 'Prateek Kumar Sinha'],
     ['DOB', '09.09.1989'],
@@ -23,5 +23,4 @@ export class PersonalInformationComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {}
 }

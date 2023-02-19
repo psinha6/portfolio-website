@@ -6,7 +6,7 @@ import { Education } from '../models/models';
   templateUrl: './education.component.html',
   styleUrls: ['./education.component.css'],
 })
-export class EducationComponent implements OnInit {
+export class EducationComponent {
   educationList: Education[] = [
     {
       institute: "Jawaharlal Nehru University",
@@ -24,5 +24,4 @@ export class EducationComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {}
 }

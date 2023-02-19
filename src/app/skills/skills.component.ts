@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Skill } from '../models/models';
 
 @Component({
@@ -6,7 +6,7 @@ import { Skill } from '../models/models';
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.css'],
 })
-export class SkillsComponent implements OnInit {
+export class SkillsComponent {
   skills: Skill[] = [
     {
       name: 'Angular, Angular Material',
@@ -40,6 +40,4 @@ export class SkillsComponent implements OnInit {
     }
   ];
   constructor() {}
-
-  ngOnInit(): void {}
 }

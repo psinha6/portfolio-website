@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Project } from '../models/models';
 
 @Component({
@@ -6,7 +6,7 @@ import { Project } from '../models/models';
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.css'],
 })
-export class ProjectsComponent implements OnInit {
+export class ProjectsComponent {
   projects: Project[] = [
     {
       title: 'Luma Virtual Agent',
@@ -36,5 +36,4 @@ export class ProjectsComponent implements OnInit {
   ];
   constructor() {}
 
-  ngOnInit(): void {}
 }
