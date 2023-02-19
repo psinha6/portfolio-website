@@ -1,4 +1,4 @@
-name: portfolio website
+name: portfolio website ci#
 on:
   push:
     branches:
@@ -12,7 +12,7 @@ jobs:
         node-version: [18.x]
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v1
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
@@ -21,7 +21,7 @@ jobs:
 
       - name: Cache node modules
         id: cache-nodemodules
-        uses: actions/cache@v2
+        uses: actions/cache@v1
         env:
           cache-name: cache-node-modules
         with:
