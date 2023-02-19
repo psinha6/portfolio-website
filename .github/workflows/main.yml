@@ -1,4 +1,4 @@
-name: portfolio website ci#
+name: Portfolio Website CI#
 on:
   push:
     branches:
